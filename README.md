@@ -5,7 +5,6 @@ It isn't a framework. This template assists you starting your cross-browser exte
 
 ## Features
 
----
 - 💪 TypeScript
 - 🚀 React
 - 🎨 PostCSS with support LESS and SCSS
@@ -15,7 +14,6 @@ It isn't a framework. This template assists you starting your cross-browser exte
 
 ## Commands
 
----
 #### Develop
 ```shell
 npm i
@@ -36,7 +34,6 @@ npm -i -D @types/webextension-polyfill
 
 ## Structure
 
----
 ```
 |-- scripts : scripts for build and start development
 |-- src : source code
@@ -59,5 +56,5 @@ npm -i -D @types/webextension-polyfill
     |-- public : another files e.g. icons, this dir will be copied to build without any transformations
 ```
 
----
+##
 If you have any questions or comments, please create a new issue.
