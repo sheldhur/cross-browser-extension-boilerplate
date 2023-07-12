@@ -10,7 +10,7 @@ It isn't a framework. This template assists you starting your cross-browser exte
 - 🎨 PostCSS with support LESS and SCSS
 - 📜 Manifest V3 and Manifest V2
 - 🔄 Extension hot reload for Chromium and Firefox browsers
-- ⛺ Open a target browser with a temporary profile for development
+- ⛺ Opens a target browser with a temporary profile for development
 
 ## Commands
 
