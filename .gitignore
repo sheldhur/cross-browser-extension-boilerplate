@@ -1,0 +1,12 @@
+# OSX
+.DS_Store
+
+# Project
+node_modules
+dist
+tmp
+!.gitkeep
+
+# User-specific stuff
+.idea/*
+

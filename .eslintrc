@@ -1,0 +1,73 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "import"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/indent": 0,
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "no-shadow": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "object-curly-newline": "off",
+    "import/order": [
+      "warn",
+      {
+        "pathGroups": [
+          {
+            "pattern":  "@common/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern":  "@types/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern":  "@src/**",
+            "group": "internal",
+            "position": "after"
+          }
+        ],
+        "newlines-between": "always",
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "groups": [
+          "external",
+          "builtin",
+          "internal",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  },
+  "globals": {
+    "chrome": "readonly"
+  },
+  "ignorePatterns": ["node_modules/**", "dist/**"]
+}

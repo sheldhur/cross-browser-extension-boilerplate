@@ -1,0 +1,9 @@
+body {
+    color: dodgerblue;
+}
+
+.wrapper {
+    text-align: center;
+    min-height: 200px;
+    min-width: 200px;
+}
