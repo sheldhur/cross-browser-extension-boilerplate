@@ -11,7 +11,7 @@ import {
 } from './builder';
 import { launchBrowser } from './launch';
 import { startWatching } from './watch';
-import pkg from '../../package.json';
+import pkg from '../../package.json' assert { type: 'json' };
 import { paths } from '../paths';
 import { BuildError, createDir, getArgs, getBrowser } from '../utils';
 

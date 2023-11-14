@@ -5,7 +5,7 @@ import fse from 'fs-extra';
 import { relative, resolve } from 'path';
 
 import { makeConfig } from '../../esbuild.config';
-import pkg from '../../package.json';
+import pkg from '../../package.json' assert { type: 'json' };
 import { buildManifest } from '../../src/manifest';
 import { paths } from '../paths';
 import { BuildError, copyDir, createDir, getEntryPoint } from '../utils';
