@@ -4,8 +4,8 @@ import fse from 'fs-extra';
 
 import { relative, resolve } from 'path';
 
+import { pkg } from './pkg';
 import { makeConfig } from '../../esbuild.config';
-import pkg from '../../package.json';
 import { buildManifest } from '../../src/manifest';
 import { paths } from '../paths';
 import { BuildError, copyDir, createDir, getEntryPoint } from '../utils';
