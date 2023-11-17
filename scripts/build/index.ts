@@ -10,12 +10,13 @@ import {
   builderVersion,
 } from './builder';
 import { launchBrowser } from './launch';
+import { readPackageJson, pkg } from './pkg';
 import { startWatching } from './watch';
-import pkg from '../../package.json' assert { type: 'json' };
 import { paths } from '../paths';
 import { BuildError, createDir, getArgs, getBrowser } from '../utils';
 
 (async () => {
+  await readPackageJson();
   try {
     const {
       browsers,
